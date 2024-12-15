@@ -3,7 +3,7 @@ import './App.css'
 import ColorButton from './_components/colorButton'
 
 function App () {
-  const [bgcolor, setBgcolor] = useState('olive')
+  const [bgcolor, setBgcolor] = useState('black')
 
   return (
     <div
@@ -33,7 +33,7 @@ function App () {
           >
             Blue
           </button>
-          <ColorButton onClick={() => setBgcolor('red')} colorName='Red' />
+          <ColorButton onClick={console.log('hello')} colorName='Red' />
           <ColorButton colorName='Black' />
           <ColorButton colorName='Purple' />
         </div>
