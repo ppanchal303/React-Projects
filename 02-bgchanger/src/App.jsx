@@ -33,9 +33,12 @@ function App () {
           >
             Blue
           </button>
-          <ColorButton onClick={console.log('hello')} colorName='Red' />
-          <ColorButton colorName='Black' />
-          <ColorButton colorName='Purple' />
+          <ColorButton onClick={() => setBgcolor('red')} colorName='Red' />
+          <ColorButton onClick={() => setBgcolor('black')} colorName='Black' />
+          <ColorButton
+            onClick={() => setBgcolor('purple')}
+            colorName='Purple'
+          />
         </div>
       </div>
     </div>
